@@ -4,7 +4,12 @@ import { sequelize } from "./database/database.js";
 
 import app from "./app.js";
 
-
+/**
+ * Esta es la función principal que inicia la aplicación.
+ * 
+ * @param {none} No toma ningún parámetro.
+ * @returns {Promise<void>} No devuelve nada.
+ */
 async function main() {
   try {
     await sequelize.sync({force: false});
